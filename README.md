@@ -16,6 +16,114 @@
 
 ---
 
+### User Manual
+
+#### Key Mappings Overview
+
+##### Leader Key
+The leader key is set to `Alt+Ctrl+A` (or `Super+Ctrl+A` on macOS). This is used as a prefix for many commands.
+
+##### General Function Keys
+- `F1`: Activate copy mode
+- `F2`: Show command palette
+- `F3`: Show launcher
+- `F4`: Show launcher with tabs
+- `F5`: Show launcher with workspaces
+- `F11`: Toggle full screen
+- `F12`: Show debug overlay
+
+##### Window Management
+- `Super+N`: Spawn new window
+- `Super+-`: Decrease window size
+- `Super+=`: Increase window size
+- `Super+F11`: Toggle full screen
+
+##### Tab Management
+- `Super+T`: Open new tab
+- `Super+Ctrl+T`: Open new WSL:Ubuntu tab
+- `Super+Ctrl+W`: Close current tab
+- `Super+[`: Switch to previous tab
+- `Super+]`: Switch to next tab
+- `Super+Ctrl+[`: Move tab left
+- `Super+Ctrl+]`: Move tab right
+- `Super+0`: Manually update tab title
+- `Super+Ctrl+0`: Reset tab title
+- `Super+9`: Toggle tab bar visibility
+
+##### Pane Management
+- `Super+\`: Split pane vertically
+- `Super+Ctrl+\`: Split pane horizontally
+- `Super+Enter`: Toggle pane zoom
+- `Super+W`: Close current pane
+- `Super+Ctrl+K`: Move to pane above
+- `Super+Ctrl+J`: Move to pane below
+- `Super+Ctrl+H`: Move to pane on left
+- `Super+Ctrl+L`: Move to pane on right
+- `Super+Ctrl+P`: Swap panes (with number selection)
+
+##### Scrolling
+- `Super+U`: Scroll up 5 lines
+- `Super+D`: Scroll down 5 lines
+- `PageUp`: Scroll up 75% of viewport
+- `PageDown`: Scroll down 75% of viewport
+
+##### Background Controls
+- `Super+/`: Random background
+- `Super+,`: Cycle background backward
+- `Super+.`: Cycle background forward
+- `Super+Ctrl+/`: Select background from list
+- `Super+B`: Toggle background focus
+
+##### Font Size Control (Leader Mode)
+After pressing `Alt+Ctrl+A` (leader key):
+- `F`: Enter font resize mode
+  - `K`: Increase font size
+  - `J`: Decrease font size
+  - `R`: Reset font size
+  - `Esc` or `Q`: Exit font resize mode
+
+##### Pane Resize Control (Leader Mode)
+After pressing `Alt+Ctrl+A` (leader key):
+- `P`: Enter pane resize mode
+  - `K`: Increase pane size upward
+  - `J`: Increase pane size downward
+  - `H`: Increase pane size leftward
+  - `L`: Increase pane size rightward
+  - `Esc` or `Q`: Exit pane resize mode
+
+##### Other Useful Features
+- `Super+F`: Search (case-insensitive)
+- `Super+Ctrl+U`: Quick URL selection and opening
+- `Super+V`: Paste from primary selection
+- `Super+K`: Clear scrollback
+- `Super+LeftArrow`: Move cursor to start of line
+- `Super+RightArrow`: Move cursor to end of line
+
+##### Mouse Bindings
+- `Ctrl+Click`: Open link under mouse cursor
+
+#### General Features
+- Automatic config reloading is enabled
+- Scrollback buffer: 20,000 lines
+- Status bar updates every 1000ms
+- Smart URL detection and highlighting for:
+  - URLs in parentheses: (URL)
+  - URLs in brackets: [URL]
+  - URLs in curly braces: {URL}
+  - URLs in angle brackets: <URL>
+  - Plain URLs
+  - Email addresses (automatically converted to mailto: links)
+
+#### Tips
+1. Use the command palette (`F2`) to discover and execute commands
+2. The launcher (`F3`) provides quick access to various features
+3. Use the debug overlay (`F12`) for troubleshooting
+4. The status bar shows useful information including time
+5. Background images can be cycled through or randomly selected
+6. Pane management is highly flexible with both keyboard and mouse controls
+
+---
+
 ### Features
 
 - [**Background Image Selector**](https://github.com/KevinSilvester/wezterm-config/blob/master/utils/backdrops.lua)
